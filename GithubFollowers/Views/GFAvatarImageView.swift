@@ -11,6 +11,8 @@ class GFAvatarImageView: UIImageView {
     
     let cache = NetworkManager.shared.cache
     let placeholderImage = UIImage(named: "avatar-placeholder")!
+    private var currentURL: String?
+    private var currentDownloadTask: URLSessionDataTask?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,6 +31,8 @@ class GFAvatarImageView: UIImageView {
     }
     
     func downloadImage(from urlString: String) {
+        currentURL = urlString
+        currentDownloadTask?.cancel()
         
         let cacheKey = NSString(string: urlString)
         
@@ -39,9 +43,9 @@ class GFAvatarImageView: UIImageView {
         
         guard let url = URL(string: urlString) else { return }
         
-        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
-            
+        currentDownloadTask = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             guard let self = self else { return }
+            self.currentDownloadTask = nil
             if error != nil { return }
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { return }
             guard let data = data else { return }
@@ -49,10 +53,11 @@ class GFAvatarImageView: UIImageView {
             guard let image = UIImage(data: data) else { return }
             self.cache.setObject(image, forKey: cacheKey)
             
-            DispatchQueue.main.async { self.image = image }
+            if self.currentURL == urlString {
+                DispatchQueue.main.async { self.image = image }
+            }
         }
         
-        task.resume()
+        currentDownloadTask?.resume()
     }
-
 }
