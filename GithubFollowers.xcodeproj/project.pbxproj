@@ -26,6 +26,7 @@
 		A184D35E2C0FCDD100AA81BD /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D35D2C0FCDD100AA81BD /* ErrorMessage.swift */; };
 		A184D3612C0FD33300AA81BD /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D3602C0FD33300AA81BD /* FollowerCell.swift */; };
 		A184D3632C0FD3B200AA81BD /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D3622C0FD3B200AA81BD /* GFAvatarImageView.swift */; };
+		A184D3652C10F40A00AA81BD /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D3642C10F40A00AA81BD /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		A184D35D2C0FCDD100AA81BD /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		A184D3602C0FD33300AA81BD /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		A184D3622C0FD3B200AA81BD /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		A184D3642C10F40A00AA81BD /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		A184D35C2C0FCDB200AA81BD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A184D3642C10F40A00AA81BD /* UIHelper.swift */,
 				A184D35D2C0FCDD100AA81BD /* ErrorMessage.swift */,
 			);
 			path = Utilities;
@@ -245,6 +248,7 @@
 				A184D32B2C0E62E400AA81BD /* GFTextField.swift in Sources */,
 				A184D3282C0E5F9100AA81BD /* GFButton.swift in Sources */,
 				A184D3562C0FB4EE00AA81BD /* Follower.swift in Sources */,
+				A184D3652C10F40A00AA81BD /* UIHelper.swift in Sources */,
 				A184D3632C0FD3B200AA81BD /* GFAvatarImageView.swift in Sources */,
 				A184D34D2C0FA4AD00AA81BD /* FavoritesListViewController.swift in Sources */,
 				A184D3312C0E8B0900AA81BD /* GFBodyLabel.swift in Sources */,
