@@ -29,6 +29,9 @@
 		A184D3652C10F40A00AA81BD /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D3642C10F40A00AA81BD /* UIHelper.swift */; };
 		A184D36D2C112B1400AA81BD /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D36C2C112B1400AA81BD /* GFEmptyStateView.swift */; };
 		A184D36F2C1247EA00AA81BD /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D36E2C1247EA00AA81BD /* UserInfoViewController.swift */; };
+		A184D3712C125AD500AA81BD /* GFUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D3702C125AD500AA81BD /* GFUserInfoHeaderViewController.swift */; };
+		A184D3732C125B5000AA81BD /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D3722C125B5000AA81BD /* GFSecondaryTitleLabel.swift */; };
+		A184D3752C12613300AA81BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184D3742C12613300AA81BD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		A184D3642C10F40A00AA81BD /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		A184D36C2C112B1400AA81BD /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		A184D36E2C1247EA00AA81BD /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		A184D3702C125AD500AA81BD /* GFUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
+		A184D3722C125B5000AA81BD /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		A184D3742C12613300AA81BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 			children = (
 				A184D3642C10F40A00AA81BD /* UIHelper.swift */,
 				A184D35D2C0FCDD100AA81BD /* ErrorMessage.swift */,
+				A184D3742C12613300AA81BD /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 			children = (
 				A184D3302C0E8B0900AA81BD /* GFBodyLabel.swift */,
 				A184D32E2C0E89B300AA81BD /* GFTitleLabel.swift */,
+				A184D3722C125B5000AA81BD /* GFSecondaryTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -215,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				A184D3492C0FA4AD00AA81BD /* GFAlertViewController.swift */,
+				A184D3702C125AD500AA81BD /* GFUserInfoHeaderViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -303,14 +312,17 @@
 				A184D3282C0E5F9100AA81BD /* GFButton.swift in Sources */,
 				A184D3562C0FB4EE00AA81BD /* Follower.swift in Sources */,
 				A184D3652C10F40A00AA81BD /* UIHelper.swift in Sources */,
+				A184D3752C12613300AA81BD /* Constants.swift in Sources */,
 				A184D3632C0FD3B200AA81BD /* GFAvatarImageView.swift in Sources */,
 				A184D34D2C0FA4AD00AA81BD /* FavoritesListViewController.swift in Sources */,
+				A184D3712C125AD500AA81BD /* GFUserInfoHeaderViewController.swift in Sources */,
 				A184D3312C0E8B0900AA81BD /* GFBodyLabel.swift in Sources */,
 				A184D32F2C0E89B300AA81BD /* GFTitleLabel.swift in Sources */,
 				A184D35E2C0FCDD100AA81BD /* ErrorMessage.swift in Sources */,
 				A184D30F2C0E4CBF00AA81BD /* AppDelegate.swift in Sources */,
 				A184D3612C0FD33300AA81BD /* FollowerCell.swift in Sources */,
 				A184D34F2C0FA4AD00AA81BD /* FollowerListViewController.swift in Sources */,
+				A184D3732C125B5000AA81BD /* GFSecondaryTitleLabel.swift in Sources */,
 				A184D36D2C112B1400AA81BD /* GFEmptyStateView.swift in Sources */,
 				A184D35B2C0FBA7300AA81BD /* NetworkManager.swift in Sources */,
 				A184D34E2C0FA4AD00AA81BD /* GFAlertViewController.swift in Sources */,
