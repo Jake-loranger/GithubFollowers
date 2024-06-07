@@ -23,14 +23,14 @@ class FollowerListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureVeiwController()
+        configureViewController()
         configureCollectionView()
         configureSearchController()
         getFollowers(username: username, page: page)
         configureDataSource()
     }
     
-    private func configureVeiwController() {
+    private func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.isNavigationBarHidden = false
         navigationController?.navigationBar.prefersLargeTitles = true

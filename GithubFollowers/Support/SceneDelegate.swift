@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .white
+        appearance.backgroundColor = .systemBackground
         
         searchNC.navigationBar.standardAppearance = appearance
         searchNC.navigationBar.scrollEdgeAppearance = appearance
@@ -48,7 +48,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .white
+        appearance.backgroundColor = .systemBackground
         
         favoritesNC.navigationBar.standardAppearance = appearance
         favoritesNC.navigationBar.scrollEdgeAppearance = appearance
