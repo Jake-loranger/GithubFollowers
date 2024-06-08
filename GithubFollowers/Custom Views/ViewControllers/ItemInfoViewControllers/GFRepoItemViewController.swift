@@ -9,17 +9,6 @@ import UIKit
 
 class GFRepoItemViewController: GFItemInfoViewController {
     
-    var user: User!
-    
-    init(user: User) {
-        super.init(nibName: nil, bundle: nil)
-        self.user = user
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureItems()
@@ -29,5 +18,9 @@ class GFRepoItemViewController: GFItemInfoViewController {
         itemInfoViewOne.set(itemInfoType: .repos, with: user.publicRepos)
         itemInfoViewTwo.set(itemInfoType: .gists, with: user.publicGists)
         actionButton.set(backgroundColor: .systemPurple, title: "GitHub Profile")
+    }
+    
+    override func actionButtonTapped() {
+        delegate.didTapGithubProfile(for: user)
     }
 }

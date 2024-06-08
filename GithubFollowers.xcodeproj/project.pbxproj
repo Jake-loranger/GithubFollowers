@@ -239,7 +239,6 @@
 				A184D37E2C13AF7900AA81BD /* ItemInfoViewControllers */,
 				A184D3492C0FA4AD00AA81BD /* GFAlertViewController.swift */,
 				A184D3702C125AD500AA81BD /* GFUserInfoHeaderViewController.swift */,
-				A184D3762C139A6E00AA81BD /* GFItemInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -256,6 +255,7 @@
 		A184D37E2C13AF7900AA81BD /* ItemInfoViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A184D3762C139A6E00AA81BD /* GFItemInfoViewController.swift */,
 				A184D37A2C13ACFD00AA81BD /* GFRepoItemViewController.swift */,
 				A184D37C2C13AF0F00AA81BD /* GFFollowerItemViewController.swift */,
 			);
