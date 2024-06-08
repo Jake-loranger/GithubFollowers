@@ -31,14 +31,14 @@ class UserInfoViewController: UIViewController {
         getUserInfo()
     }
     
-    func configureViewController() {
+    private func configureViewController() {
         view.backgroundColor = .systemBackground
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
         doneButton.tintColor = .systemGreen
         navigationItem.rightBarButtonItem = doneButton
     }
     
-    func layoutUI() {
+    private func layoutUI() {
         itemViews = [headerView, itemViewOne, itemViewTwo, dateLabel]
         let padding: CGFloat = 20
         let itemHeight: CGFloat = 140
